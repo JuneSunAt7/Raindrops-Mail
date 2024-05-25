@@ -4,7 +4,7 @@ import(
 	"fmt"
 	"github.com/pterm/pterm"
 	"atomicgo.dev/keyboard/keys"
-	postclient "github.com/JuneSunAt7/Raindrops-Mail"
+	postclient "github.com/JuneSunAt7/Raindrops-Mail/postclient"
 )
 func tui(){
 	var options []string
