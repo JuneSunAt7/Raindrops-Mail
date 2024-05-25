@@ -9,6 +9,7 @@ import (
 	postclient "github.com/JuneSunAt7/Raindrops-Mail/post_client"
 	sender "github.com/JuneSunAt7/Raindrops-Mail/sender"
 	server "github.com/JuneSunAt7/Raindrops-Mail/server"
+	mgmtdata "github.com/JuneSunAt7/Raindrops-Mail/mgmtdata"
 	
 )
 func tui(){
@@ -42,7 +43,7 @@ func tui(){
 		case "Аутенфикация и пароли":
 			
 		case "Все сообщения":
-			
+			mgmtdata.TuiReadAllMessages()
 		case "Выход":
 			return
 		}
