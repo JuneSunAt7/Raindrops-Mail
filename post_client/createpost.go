@@ -3,6 +3,8 @@ import(
 
 	"github.com/pterm/pterm"
 	"golang.org/x/sys/windows/registry"
+
+	"encoding/base64"
 )
 type Addr struct { 
 	Address string
@@ -21,7 +23,7 @@ func createAddr(address string) {
 	writeToRegedit(addr)
 }
 func writeToRegedit(address Addr ){
-	CreateSettingsToRegedit("addr", address.Address)
+	CreateSettingsToRegedit("addr", base64.StdEncoding.EncodeToString([]byte(address.Address)))
 }
 
 func CreateSettingsToRegedit(settingsName string, settingValue string) {

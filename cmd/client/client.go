@@ -4,8 +4,11 @@ import (
 	"fmt"
 
 	"atomicgo.dev/keyboard/keys"
-	postclient "github.com/JuneSunAt7/Raindrops-Mail/post_client"
 	"github.com/pterm/pterm"
+
+	postclient "github.com/JuneSunAt7/Raindrops-Mail/post_client"
+	sender "github.com/JuneSunAt7/Raindrops-Mail/sender"
+	
 )
 func tui(){
 	var options []string
@@ -30,9 +33,9 @@ func tui(){
 		case "Создать адрес":
 			postclient.TuiCreateAddr()
 		case "Отправить сообщение":
-			
+			sender.TuiTextArea()
 		case "Использовать адрес":
-			
+			postclient.TuiUseAddr()
 		case "Конфигурация":
 			
 		case "Аутенфикация и пароли":
