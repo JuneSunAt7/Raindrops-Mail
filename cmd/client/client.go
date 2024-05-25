@@ -8,6 +8,7 @@ import (
 
 	postclient "github.com/JuneSunAt7/Raindrops-Mail/post_client"
 	sender "github.com/JuneSunAt7/Raindrops-Mail/sender"
+	server "github.com/JuneSunAt7/Raindrops-Mail/server"
 	
 )
 func tui(){
@@ -49,5 +50,6 @@ func tui(){
 
 }
 func main(){
-tui()
+	go server.StartServer()
+	tui()
 }

@@ -1,0 +1,5 @@
+package mgmtdata
+
+func TuiReadAllMessages(){
+	
+}
