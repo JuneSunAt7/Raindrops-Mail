@@ -1,4 +1,4 @@
-module github.com/JuneSunAt7/Raindrops-mail
+module github.com/JuneSunAt7/Raindrops-Mail
 
 go 1.21.4
 
