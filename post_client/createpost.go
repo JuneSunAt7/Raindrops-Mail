@@ -9,7 +9,7 @@ type Addr struct {
 	Port int 
 }
 func TuiCreateAddr(){
-	pterm.DefaultHeader.WithFullWidth().WithBackgroundStyle(pterm.NewStyle(pterm.BgGreen)).
+	pterm.DefaultHeader.WithFullWidth().WithBackgroundStyle(pterm.NewStyle(pterm.BgCyan)).
 	WithTextStyle(pterm.NewStyle(pterm.FgBlack)).Println("Создание адреса")
 	addr, _ := pterm.DefaultInteractiveTextInput.Show("IP: ")
 	createAddr(addr)

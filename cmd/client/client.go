@@ -1,10 +1,11 @@
 package main
 
-import(
+import (
 	"fmt"
-	"github.com/pterm/pterm"
+
 	"atomicgo.dev/keyboard/keys"
-	postclient "github.com/JuneSunAt7/Raindrops-Mail/postclient"
+	postclient "github.com/JuneSunAt7/Raindrops-Mail/post_client"
+	"github.com/pterm/pterm"
 )
 func tui(){
 	var options []string
